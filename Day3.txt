@@ -1,0 +1,90 @@
+Python -----Day 3
+
+DICTIONARY
+
+
+
+user_dict ={'narenrj95@gmail.com':{'name':'Naren','city':'Chennai'}, 
+'abc@gmail.com':{'name':'Rahul','city':'Bengaluru'}}
+
+
+print(user_dict)
+
+user_dict['xyz@gmail.com']={'name':'Santhosh','city':'Chennai'}
+
+print(user_dict)
+
+a=1111111111111(SUMMA TO CREAT A GAP)
+   
+print(a)
+
+user_dict['xyz@gmail.com']['name']='aishwarya'
+
+print(user_dict)
+
+
+
+stud_dict ={'stud1':[68,89,90],'stud2':[56,55,87]}
+
+print(stud_dict)
+
+print(stud_dict['stud1'][2])#o/p will be 90 from stud 1
+
+
+
+
+  
+print(a)
+
+for k,v in stud_dict.items():
+ 
+   for i in v:
+
+        print(k,i)
+
+
+
+
+ 
+print(a)
+
+for mail_id,data_dict in user_dict.items():
+
+    for key,value in data_dict.items():
+   
+     print(mail_id,key,value)
+
+
+
+
+
+
+
+###FILE OPERATIONS
+
+#file handling 
+
+
+#modes
+
+---r/rb/r+/rb+ (read)
+
+---w/wb/w+/wb+ (write)
+
+---a/ab/a+/ab+ (append)
+
+
+
+
+#syntax
+
+
+
+
+file_obj = open('filename','mode')
+
+data = file_obj.read()
+
+print(data)
+
+file_obj.close()

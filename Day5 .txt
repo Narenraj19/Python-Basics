@@ -1,0 +1,179 @@
+'''
+
+author:Narendra Raj
+
+description:Classes
+
+date:1/12/17
+
+'''
+
+
+
+class Python:
+
+    def add(self,a,b):
+
+        c=a+b
+
+        return c
+
+    def sub(self,a,b):
+
+        c=a-b
+
+        return c
+
+
+
+a=5
+
+b=4
+
+obj =Python()
+
+out = obj.add(a,b)
+
+print(out)
+
+out =obj.sub(a,b)
+
+print(out)
+
+##Use of Self 
+
+class Python:
+
+    def __init__(self):
+
+        print("came inside init")
+
+        self.a=6
+
+        self.b=7
+
+    def add(self):
+
+        c=self.a+self.b
+
+        return c
+
+    def sub(self):
+
+        c=self.a-self.b
+
+        return c
+
+obj =Python()
+
+out = obj.add()
+
+print(out)
+
+out =obj.sub()
+
+print(out)
+
+
+
+##
+class Python:
+
+    def __init__(self):
+
+        print("came inside init")
+
+        self.a=raw_input("")
+
+        self.b=raw_input("")
+
+        self.c=int(self.a)
+
+        self.d=int(self.b)
+
+    
+    def add(self):
+
+        c=self.c+self.d
+
+        return c
+
+    def sub(self):
+
+        c=self.c-self.d
+
+        return c
+
+obj =Python()
+
+out = obj.add()
+
+print(out)
+
+out =obj.sub()
+
+print(out)
+
+
+
+##
+class Method:
+
+    def __init__(self):
+
+        self.getString()
+
+        self.printString()
+
+    def getString(self):
+
+        a=raw_input("ENter a String")
+
+        self.a=a
+
+    def printString(self):
+
+        print(self.a.upper())
+
+       
+ 
+obj=Method()
+
+
+
+--------------------------Inheritance-------------------------
+
+class A:
+
+    def __init__(self):
+
+        self.getString()
+
+    def getString(self):
+
+        a=raw_input("Enter String")
+
+        self.a=a
+
+        
+class B(A):
+
+    def printString(self):
+
+        print(self.a.upper())
+
+
+obj=B()
+
+obj.printString()
+
+-----------------List to Dictionary----------------------------
+
+l = [1,2,3,4,5]
+
+m = [6,7,8,9,10]
+
+print(zip(l,m))
+
+print(dict(zip(l,m)))   
+
